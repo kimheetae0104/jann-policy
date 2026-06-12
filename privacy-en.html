@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Jann</title>
+<style>
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 760px; margin: 40px auto; padding: 0 20px; color: #222; line-height: 1.65; }
+h1 { font-size: 28px; border-bottom: 2px solid #d4a373; padding-bottom: 8px; }
+h2 { font-size: 20px; margin-top: 36px; color: #5c4a3a; }
+h3 { font-size: 16px; margin-top: 24px; }
+small { color: #888; }
+a { color: #b27a3a; }
+table { border-collapse: collapse; width: 100%; margin: 16px 0; }
+th, td { border: 1px solid #e6dccb; padding: 8px 10px; text-align: left; font-size: 14px; }
+th { background: #f7f2e8; }
+.note { background: #fffaf0; border-left: 3px solid #d4a373; padding: 12px 16px; margin: 16px 0; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<small>Effective date: 2026-06-09 · Last updated: 2026-06-09 · Version 1.1</small>
+
+<p>This Privacy Policy describes how <strong>Heetae Kim</strong> ("we", "us", "Jann") collects, uses, stores, and shares personal information when you use the Jann mobile application (the "App"). This English version is provided for users outside the Republic of Korea; the Korean version remains the controlling text where any conflict arises (<a href="privacy.html">한국어 보기</a>).</p>
+
+<div class="note">
+<strong>TL;DR.</strong> Jann processes ingredient photos entirely on your device. Only your AI-recipe requests (anonymized ingredient names, never photos) are sent to OpenAI, with your explicit one-time consent. We do not sell your data, do not run cross-app tracking, and serve only non-personalized ads.
+</div>
+
+<h2>1. Data Controller</h2>
+<p>Heetae Kim, individual developer<br>
+Contact: cobokk2123@gmail.com<br>
+Support: cobokk2123@gmail.com<br>
+Location: Republic of Korea</p>
+
+<h2>2. What We Collect and Why</h2>
+<table>
+<tr><th>Data type</th><th>Purpose</th><th>Legal basis (GDPR Art. 6)</th><th>Retention</th></tr>
+<tr><td>Email, name, photo URL (from Apple / Google / Kakao sign-in)</td><td>Account identification</td><td>Performance of contract</td><td>Until account deletion</td></tr>
+<tr><td>Ingredient list (text, not photos)</td><td>AI recipe generation</td><td>Consent (one-time AI modal)</td><td>30 days at OpenAI; deleted from our servers immediately after response</td></tr>
+<tr><td>Photos for ingredient recognition</td><td>On-device YOLO inference only</td><td>—</td><td>Photos never leave your device</td></tr>
+<tr><td>Device IDFA / Ad ID</td><td>Non-personalized Google AdMob</td><td>Legitimate interest (npa=1)</td><td>Per Google AdMob policy</td></tr>
+<tr><td>App version, OS version, locale (in error logs)</td><td>Crash diagnostics</td><td>Legitimate interest</td><td>90 days</td></tr>
+</table>
+
+<h2>3. International Data Transfers</h2>
+<p>If you reside in the EU, UK, or Switzerland and use the AI recipe feature, your anonymized ingredient list is transferred to <strong>OpenAI, L.L.C.</strong> (United States) via a Cloudflare Workers proxy operated by us. OpenAI is committed to the EU-U.S. Data Privacy Framework (DPF); transfers rely on this DPF certification together with Standard Contractual Clauses (2021/914/EU) where applicable. We do not transfer any image data internationally.</p>
+
+<h2>4. Your Rights</h2>
+<p>Depending on your jurisdiction, you have the following rights:</p>
+<ul>
+<li><strong>EU / UK (GDPR / UK GDPR):</strong> access, rectification, erasure, restriction, portability, objection, and the right to lodge a complaint with your local data protection authority.</li>
+<li><strong>California (CCPA / CPRA):</strong> know, delete, correct, opt-out of "sale" or "sharing", and limit use of sensitive personal information. <em>We do not sell your personal information.</em></li>
+<li><strong>Republic of Korea (PIPA):</strong> access, correction, deletion, and consent withdrawal.</li>
+<li><strong>Other jurisdictions:</strong> users in China (PIPL), Japan (APPI), Brazil (LGPD), Canada (PIPEDA), or other regions may have additional rights under local law. We honor verifiable requests on the same email channel below.</li>
+</ul>
+<p>To exercise any right, email <strong>cobokk2123@gmail.com</strong> with subject line "Privacy Request — [region]". We respond within 30 days.</p>
+
+<h2>5. Account Deletion</h2>
+<p>You can delete your account in-app at <em>Me → Delete account</em>. This permanently removes your stored ingredients, saved recipes, and profile. Deletion is irreversible and cannot be restored.</p>
+
+<h2>6. Children</h2>
+<p>Jann is not directed to children under 13 (or under 16 in the EEA). We do not knowingly collect data from such children. If you believe a child has provided us data, contact us and we will delete it.</p>
+
+<h2>7. Cookies and Tracking</h2>
+<p>The mobile app does not use cookies. We do not perform cross-app or cross-website tracking; Apple App Tracking Transparency (ATT) is not requested because we do not track. AdMob serves only non-personalized ads (parameter <code>npa=1</code>).</p>
+
+<h2>8. Third-Party Services</h2>
+<p>The following processors may receive limited data:</p>
+<ul>
+<li><strong>Apple Inc.</strong> — Sign in with Apple (account)</li>
+<li><strong>Google LLC</strong> — Google Sign-In, Firebase Auth, Google AdMob (non-personalized)</li>
+<li><strong>Kakao Corp.</strong> — Kakao login (Korean-locale users only)</li>
+<li><strong>OpenAI, L.L.C.</strong> — AI recipe text generation (ingredient names only, with explicit consent)</li>
+<li><strong>Cloudflare, Inc.</strong> — Edge proxy to OpenAI; no persistent storage</li>
+</ul>
+
+<h2>9. Security</h2>
+<p>We transmit data over HTTPS only (App Transport Security enforced). Apple Sign In uses CSPRNG-generated nonces with SHA-256 hashing. Secrets are managed via environment variables (Cloudflare Workers, Firebase Cloud Functions); the App Store binary itself contains no API keys.</p>
+
+<h2>10. Changes to This Policy</h2>
+<p>Material changes will be announced via the App Store What's New screen and in-app notice at least 7 days before they take effect.</p>
+
+<h2>11. Governing Law &amp; Dispute Resolution</h2>
+<p>This Privacy Policy is governed by the laws of the Republic of Korea, except where mandatory local consumer-protection or data-protection law applies to you. You may bring claims in the courts of your residence or in the Seoul Central District Court.</p>
+
+<hr>
+<p><small>© 2026 Heetae Kim · Korean Copyright Commission Registration C-2026-023193 · <a href="terms-en.html">Terms of Service</a> · <a href="opensource.html">Open Source Licenses</a></small></p>
+
+</body>
+</html>
